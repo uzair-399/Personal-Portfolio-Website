@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Dancing+Script&family=Geologica:wght@200;300;500&family=Noto+Sans&family=PT+Serif&display=swap"
+        rel="stylesheet">
+    <title>WE Assignment</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        body {
+
+            font-family: 'Geologica';
+            color: azure;
+            background-color: black;
+        }
+
+        header {
+            margin: 30px 50px 0 50px;
+            height: 100vh;
+        }
+
+        nav {
+            margin: 0 !important;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            font-size: large;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px 30px;
+        }
+
+        ul li a:hover {
+            color: rgb(1, 237, 255);
+            transition: color .3s ease-in;
+        }
+
+        .nav-resume {
+            margin: 15px 0px;
+            padding: 15px 25px;
+            border-radius: 40px;
+            background-color: rgb(1, 237, 255);
+            box-shadow: 1px 1px 5px rgb(1, 237, 255);
+            transition: all .3s ease-in-out;
+        }
+
+        .nav-resume:hover {
+            background-color: black;
+            border: 1px solid rgb(1, 237, 255);
+            outline: 3px solid rgb(1, 237, 255);
+            box-shadow: 2px 2px 20px rgb(1, 237, 255);
+        }
+
+        .resume {
+            font-size: larger;
+            padding: 15px 25px;
+            background-color: rgb(1, 237, 255);
+            border-radius: 30px;
+            margin: 60px 0;
+            box-shadow: 1px 1px 10px rgb(1, 237, 255);
+            transition: all .3s ease-in-out;
+        }
+
+        .resume:hover {
+            background-color: black;
+            border: 1px solid rgb(1, 237, 255);
+            outline: 3px solid rgb(1, 237, 255);
+            box-shadow: 2px 2px 20px rgb(1, 237, 255);
+        }
+
+        .profile {
+            width: 500px;
+            float: right;
+        }
+
+        .hero {
+            margin: 100px;
+        }
+
+        .hero h2 {
+            font-size: 2.4em;
+            margin: 0;
+        }
+
+        .hero p {
+            line-height: 1.5em;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 30px 0;
+        }
+
+        i {
+            padding: 15px;
+            margin: 15px 20px 50px 0px;
+            border: 1px solid rgb(1, 237, 255);
+            border-radius: 50%;
+            box-shadow: 1px 1px 10px rgb(1, 237, 255);
+            transition: all 0.1s ease-in-out;
+        }
+
+        i:hover {
+            outline: 2px solid rgb(1, 237, 255);
+            border: none;
+            box-shadow: 2px 2px 20px rgb(1, 237, 255);
+        }
+
+        .main {
+            box-sizing: border-box;
+            background-color: rgb(32, 35, 47);
+            text-align: center;
+            height: 100vh;
+        }
+
+        span {
+            color: rgb(1, 237, 255);
+            text-shadow: 1px 1px 2px rgb(1, 237, 255);
+        }
+
+        .main h1 {
+            padding: 50px;
+            font-size: 2.5em;
+        }
+
+        .skills-sec {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .skill {
+            background-color: rgb(50, 55, 68);
+            width: 350px;
+            height: 450px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+
+        .skill i {
+            box-shadow: none !important;
+            border: none !important;
+            color: rgb(1, 237, 255);
+            margin: 30px 0 0 0;
+            width: 300px;
+        }
+
+        .skill i:hover {
+            outline: none;
+        }
+
+        .skill p {
+            margin: 10px;
+            line-height: 1.5em;
+        }
+
+        .skill button {
+            border: 1px solid rgb(1, 237, 255);
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px rgb(1, 237, 255);
+            transition: all 0.1s ease-in-out;
+            padding: 15px 25px;
+            background-color: rgb(1, 237, 255);
+            margin: 10px 0;
+        }
+        .skill:hover{
+            transform: scale(1.03);
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill button:hover {
+            background-color: black;
+            border: 1px solid rgb(1, 237, 255);
+            outline: 3px solid rgb(1, 237, 255);
+            box-shadow: 2px 2px 20px rgb(1, 237, 255);
+            color: azure;
+            transform: scale(1.05);
+        }
+
+        .contact {
+            background-color: black;
+            height: 90vh;
+            text-align: center;
+        }
+
+        .contact h1 {
+            padding: 50px 30px 20px 50px;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        input,
+        textarea {
+            background-color: rgb(50, 55, 68);
+            border: none;
+            padding: 15px 70px;
+            margin: 7px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 478px;
+            height: 220px;
+        }
+
+        button {
+            border: 1px solid rgb(1, 237, 255);
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px rgb(1, 237, 255);
+            transition: all 0.1s ease-in-out;
+            padding: 15px 25px;
+            background-color: rgb(1, 237, 255);
+            margin: 20px 0;
+
+        }
+
+        textarea,
+        input:focus {
+            color: aliceblue;
+        }
+
+        button:hover {
+            background-color: black;
+            border: 1px solid rgb(1, 237, 255);
+            outline: 3px solid rgb(1, 237, 255);
+            box-shadow: 2px 2px 20px rgb(1, 237, 255);
+            color: azure;
+            transform: scale(1.05);
+        }
+
+        footer {
+            display: flex;
+            height: 40vh;
+            background-color: rgb(32, 35, 47);
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Protfolio</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a class="nav-resume" href="#">RESUME</a>
+        </nav>
+        <img class="profile" src="profile.jpg" alt="">
+        <div class="hero">
+            <h2>Hello, It's Me</h2>
+            <h1>Uzair Asif</h1>
+            <h2>And I'm a <span> Frontend Developer </span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla quo, asperiores amet temporibus
+                accusantium eveniet mollitia a ex culpa!</p>
+            <div class="links">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <a class="resume" href="#">Download CV</a>
+    </header>
+    <div class="main">
+        <h1>My <span>Skills</span></h1>
+        <div class="skills-sec">
+            <div class="skill">
+                <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eius? Vitae delectus, quaerat et
+                    quo, voluptas quam molestiae porro atque culpa, libero ipsa doloremque! Modi soluta accusantium
+                    nobis nostrum quisquam.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="skill">
+                <i class="fa fa-eyedropper fa-4x" aria-hidden="true"></i>
+                <h2>UI/UX Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eius? Vitae delectus, quaerat et
+                    quo, voluptas quam molestiae porro atque culpa, libero ipsa doloremque! Modi soluta accusantium
+                    nobis nostrum quisquam.</p>
+                <button>Read More</button>
+            </div>
+            <div class="skill">
+                <i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
+                <h2>Graphic Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, eius? Vitae delectus, quaerat et
+                    quo, voluptas quam molestiae porro atque culpa, libero ipsa doloremque! Modi soluta accusantium
+                    nobis nostrum quisquam.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact <span>Me!</span></h1>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" required placeholder="Enter Email"> <br>
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Enter Country Name"> <br>
+        <textarea name="" id="" placeholder="Enter a Message"></textarea> <br>
+        <button>Send Message</button>
+
+    </div>
+    <footer>
+        <ul>
+            <h3>Social</h3>
+            <li> <a target="_blank" href="https://www.facebook.com/profile.php?id=100008912524759"></a> Facebook</li>
+            <br>
+            <li> <a target="_blank" href="https://www.linkedin.com/in/uzair-asif-3b5980229/"></a> LinkedIn</li> <br>
+            <li> <a target="_blank" href="https://twitter.com/UzairAs82235744"></a> Twitter</li>
+        </ul>
+        <ul>
+            <h3>Service</h3>
+            <li> <a href="#"> Compare</a></li> <br>
+            <li> <a href="#"> Download</a></li> <br>
+            <li> <a href="#"> Feedback </a></li> <br>
+            <li> <a href="#"> Bug Report </a>
+            </li>
+        </ul>
+        <ul>
+            <h3>Activity</h3>
+            <li> <a href="#"> Affiliate </a></li> <br>
+            <li>  <a href="#">Giveaway</a></li><br>
+            <li>  <a href="#">Development</a></li>
+        </ul>
+        <div class="news">
+            <h3>Newsletter Subscription</h3>
+            <input type="email" placeholder="Subscribe to our newsletter"> <button>Subscribe</button>
+            <p>&copy; Copyright 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
